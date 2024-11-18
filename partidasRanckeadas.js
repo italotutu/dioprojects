@@ -5,18 +5,19 @@ function ranks(vitoria, derrota){
     let saldo = vitoria - derrota
     
     if (saldo < 11) {
-        console.log("Ferro");
+        nivel = "ferro";
     } else if (saldo > 11 && saldo <= 20) {
-        console.log("Bronze");
+        nivel = "bronze";
     } else if (saldo > 21 && saldo <= 50) {
-        console.log("Prata");
+        nivel = "prata";
     } else if(saldo > 51 && saldo <= 80){
-        console.log("ouro")
+        nivel = "ouro";
     }else if(saldo > 81 && saldo <= 90){
-        console.log("imortal")
+        nivel = "diamante";
     }else if (saldo > 91 && saldo <= 100){
-        console.log("quase zerou")
+        console.log("lendario")
     }else {
         console.log("Imortal");
     }
+    console.log("o heroí tem de saldo de "+ saldo + " está no nivel de " + nivel)
 }
